@@ -4,8 +4,16 @@ root = true
 [*]
 indent_style = space
 
+# JSON files
+[*.json]
+indent_size = 2
+
 # Xml files
 [*.xml]
+indent_size = 2
+
+# YAML files
+[*.{yaml,yml}]
 indent_size = 2
 
 # C# files
