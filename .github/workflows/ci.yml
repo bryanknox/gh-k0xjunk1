@@ -1,14 +1,10 @@
 name: ci/cd
 on:
   pull_request:
-    types: [opened, synchronize, reopened, closed]
-    branches: [main]
   push:
     branches: [main]
     tags: ["v*"]
-  release:
-    types: [released]
-    
+
 jobs:
   lint:
     runs-on: ubuntu-latest
@@ -35,7 +31,7 @@ jobs:
 
       - name: 🔄 restore
         run: dotnet restore -m:1
-  
+
       - name: 🙏 build
         run: dotnet build --no-restore -m:1
 
@@ -91,4 +87,3 @@ jobs:
             ${{ runner.temp }}/dist/k0xjunk1-darwin-amd64
             ${{ runner.temp }}/dist/k0xjunk1-darwin-arm64
             ${{ runner.temp }}/dist/k0xjunk1-linux-amd64
- 
