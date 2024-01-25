@@ -1,3 +1,6 @@
+> # See [XpiritBV/gh-sample-ext-csharp](https://github.com/XpiritBV/gh-sample-ext-csharp) instead of this repo.
+> This repo is junk used in the development of the sample in that repo.
+
 # A simple C# sample GitHub CLI Extension
 
 A sample GitHub CLI Extension implemented in C# .NET.
